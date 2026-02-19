@@ -37,15 +37,16 @@
    RESET & BASE
    ═══════════════════════════════════════════════════ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; font-size: 16px; }
+html { scroll-behavior: smooth; font-size: 18px; }
 body {
   font-family: var(--kr);
   background: var(--deepblack);
   color: var(--text);
-  font-weight: 300;
-  line-height: 1.7;
+  font-weight: 400;
+  line-height: 1.85;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.01em;
 }
 
 /* Grain overlay */
@@ -149,7 +150,7 @@ img { max-width: 100%; display: block; }
 }
 .section__eyebrow {
   font-family: var(--sans);
-  font-size: 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.25em;
   text-transform: uppercase;
@@ -167,7 +168,7 @@ img { max-width: 100%; display: block; }
 }
 .section__title {
   font-family: var(--serif);
-  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 300;
   color: var(--cream);
   line-height: 1.2;
@@ -178,10 +179,10 @@ img { max-width: 100%; display: block; }
   color: var(--bronze);
 }
 .section__subtitle {
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   color: var(--text-muted);
-  max-width: 600px;
-  line-height: 1.8;
+  max-width: 700px;
+  line-height: 1.9;
 }
 .divider {
   width: 60px;
@@ -219,21 +220,21 @@ img { max-width: 100%; display: block; }
 }
 .hero__badge {
   font-family: var(--sans);
-  font-size: 0.6rem;
+  font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--bronze);
   border: 1px solid rgba(196,149,106,0.3);
   display: inline-block;
-  padding: 0.5rem 1.5rem;
+  padding: 0.6rem 2rem;
   margin-bottom: 3rem;
   opacity: 0;
   animation: fadeUp 1s 0.3s forwards;
 }
 .hero__title {
   font-family: var(--serif);
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-size: clamp(3rem, 7vw, 5.5rem);
   font-weight: 300;
   color: var(--cream);
   line-height: 1.15;
@@ -249,7 +250,7 @@ img { max-width: 100%; display: block; }
 }
 .hero__sub {
   font-family: var(--sans);
-  font-size: 0.85rem;
+  font-size: 1.05rem;
   color: var(--taupe);
   letter-spacing: 0.08em;
   opacity: 0;
@@ -257,7 +258,7 @@ img { max-width: 100%; display: block; }
 }
 .hero__date {
   font-family: var(--sans);
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   color: var(--mocha);
   margin-top: 3rem;
   letter-spacing: 0.15em;
@@ -269,7 +270,7 @@ img { max-width: 100%; display: block; }
   bottom: 3rem;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--mocha);
@@ -318,15 +319,15 @@ img { max-width: 100%; display: block; }
 }
 .compare-table th,
 .compare-table td {
-  padding: 1rem 1.25rem;
+  padding: 1.1rem 1.5rem;
   text-align: left;
   border-bottom: 1px solid rgba(196,149,106,0.1);
-  font-size: 0.82rem;
+  font-size: 0.95rem;
 }
 .compare-table th {
   font-family: var(--sans);
   font-weight: 600;
-  font-size: 0.65rem;
+  font-size: 0.78rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--bronze);
@@ -353,9 +354,9 @@ img { max-width: 100%; display: block; }
 }
 .badge {
   display: inline-block;
-  padding: 0.2rem 0.6rem;
+  padding: 0.25rem 0.7rem;
   border-radius: 2px;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.05em;
 }
@@ -383,9 +384,9 @@ img { max-width: 100%; display: block; }
   margin-bottom: 0.5rem;
 }
 .problem-card__text {
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   color: var(--text-muted);
-  line-height: 1.6;
+  line-height: 1.75;
 }
 .problem-card__text strong { color: #e74c3c; }
 
@@ -396,21 +397,21 @@ img { max-width: 100%; display: block; }
   width: 100%;
   border-collapse: collapse;
   margin-top: 2.5rem;
-  font-size: 0.78rem;
+  font-size: 0.95rem;
 }
 .comp-table th {
   font-family: var(--sans);
   font-weight: 600;
-  font-size: 0.6rem;
+  font-size: 0.75rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--bronze);
-  padding: 1rem;
+  padding: 1.1rem 1.2rem;
   text-align: left;
   border-bottom: 2px solid rgba(196,149,106,0.2);
 }
 .comp-table td {
-  padding: 0.85rem 1rem;
+  padding: 1rem 1.2rem;
   border-bottom: 1px solid rgba(196,149,106,0.07);
   vertical-align: top;
 }
@@ -432,10 +433,10 @@ img { max-width: 100%; display: block; }
 }
 .insight-box p {
   font-family: var(--serif);
-  font-size: 1.15rem;
+  font-size: 1.35rem;
   font-style: italic;
   color: var(--cream);
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 /* ═══════════════════════════════════════════════════
@@ -462,7 +463,7 @@ img { max-width: 100%; display: block; }
 }
 .transform-card__label {
   font-family: var(--sans);
-  font-size: 0.6rem;
+  font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -472,13 +473,13 @@ img { max-width: 100%; display: block; }
 .transform-card--after .transform-card__label { color: #2ecc71; }
 .transform-card__name {
   font-family: var(--serif);
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: var(--cream);
   margin-bottom: 0.5rem;
 }
 .transform-card__price {
   font-family: var(--sans);
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: var(--mocha);
   margin-bottom: 1rem;
 }
@@ -488,8 +489,8 @@ img { max-width: 100%; display: block; }
   gap: 0.4rem;
 }
 .tag {
-  font-size: 0.6rem;
-  padding: 0.25rem 0.6rem;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.7rem;
   background: rgba(196,149,106,0.1);
   color: var(--taupe);
   letter-spacing: 0.05em;
@@ -518,7 +519,7 @@ img { max-width: 100%; display: block; }
   line-height: 1;
 }
 .ai-stat__label {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   color: var(--text-muted);
   margin-top: 0.5rem;
   letter-spacing: 0.05em;
@@ -550,14 +551,14 @@ img { max-width: 100%; display: block; }
 }
 .feature-card__title {
   font-family: var(--serif);
-  font-size: 1.15rem;
+  font-size: 1.4rem;
   color: var(--cream);
   margin-bottom: 0.5rem;
 }
 .feature-card__desc {
-  font-size: 0.78rem;
+  font-size: 0.95rem;
   color: var(--text-muted);
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
 /* ═══════════════════════════════════════════════════
@@ -582,8 +583,8 @@ img { max-width: 100%; display: block; }
   margin-top: 0.1rem;
 }
 .seo-item__text {
-  font-size: 0.82rem;
-  line-height: 1.7;
+  font-size: 0.95rem;
+  line-height: 1.8;
 }
 .seo-item__text strong {
   color: var(--cream);
@@ -629,7 +630,7 @@ img { max-width: 100%; display: block; }
 }
 .timeline-item__week {
   font-family: var(--sans);
-  font-size: 0.6rem;
+  font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -638,20 +639,21 @@ img { max-width: 100%; display: block; }
 }
 .timeline-item__title {
   font-family: var(--serif);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: var(--cream);
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.4rem;
 }
 .timeline-item__desc {
-  font-size: 0.78rem;
+  font-size: 0.95rem;
   color: var(--text-muted);
+  line-height: 1.7;
 }
 .timeline-item__status {
   display: inline-block;
-  font-size: 0.6rem;
+  font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.1em;
-  padding: 0.2rem 0.6rem;
+  padding: 0.3rem 0.8rem;
   margin-top: 0.5rem;
 }
 .timeline-item__status--done {
@@ -689,13 +691,13 @@ img { max-width: 100%; display: block; }
   font-size: 1.5rem;
 }
 .roi-card__label {
-  font-size: 0.75rem;
+  font-size: 0.95rem;
   color: var(--text-muted);
   margin-top: 0.75rem;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 .roi-card__note {
-  font-size: 0.65rem;
+  font-size: 0.8rem;
   color: var(--mocha);
   margin-top: 0.5rem;
   font-style: italic;
@@ -952,14 +954,14 @@ img { max-width: 100%; display: block; }
         </tr>
         <tr>
           <td style="color:#e74c3c;">TJ Flowers (현재)</td>
-          <td style="color:#e74c3c;">0</td>
+          <td>3,937</td>
           <td>$150</td>
-          <td>UES 위치, 1988년부터</td>
+          <td>UES 위치, 1988년부터, 높은 리뷰</td>
           <td style="color:#e74c3c;">구식 웹사이트</td>
         </tr>
         <tr class="highlight-row">
           <td>TJ Flowers (마이그레이션 후)</td>
-          <td style="color:var(--bronze);">목표: 500+</td>
+          <td style="color:var(--bronze);">3,937 + 성장 목표</td>
           <td>$150</td>
           <td style="color:var(--bronze);">UES + 럭셔리 디지털</td>
           <td style="color:var(--green-badge);">진행 중</td>
@@ -1070,7 +1072,7 @@ img { max-width: 100%; display: block; }
       <div class="feature-card reveal reveal-delay-2">
         <div class="feature-card__icon">&#x2B50;</div>
         <div class="feature-card__title">리뷰 통합 (예정)</div>
-        <div class="feature-card__desc">Google Reviews / Judge.me 통합으로 소셜 증거 확보. 경쟁사 Windsor는 8,747개 리뷰 보유.</div>
+        <div class="feature-card__desc">기존 3,937개 Google 리뷰를 웹사이트에 직접 표시. 경쟁사 Windsor(8,747개) 수준 도달 목표.</div>
       </div>
       <div class="feature-card reveal reveal-delay-3">
         <div class="feature-card__icon">&#x1F916;</div>
@@ -1199,9 +1201,9 @@ img { max-width: 100%; display: block; }
         <div class="roi-card__note">구조화 데이터 + 모바일 최적화 + 페이지 속도</div>
       </div>
       <div class="roi-card reveal reveal-delay-2">
-        <div class="roi-card__metric">500<span>+</span></div>
-        <div class="roi-card__label">첫 해 Google 리뷰 목표</div>
-        <div class="roi-card__note">자동 리뷰 요청 + QR 코드 캠페인</div>
+        <div class="roi-card__metric">5,000<span>+</span></div>
+        <div class="roi-card__label">Google 리뷰 목표 (현재 3,937)</div>
+        <div class="roi-card__note">기존 리뷰 활용 + 자동 리뷰 요청 시스템</div>
       </div>
       <div class="roi-card reveal reveal-delay-3">
         <div class="roi-card__metric">3<span>x</span></div>
